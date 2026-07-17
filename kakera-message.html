@@ -38,12 +38,12 @@ h1 span { color: #a855f7; }
 <p class="sub">CNP×RED° コンプリートを目指せ</p>
 
 <div class="section">
-  <div class="section-title have-title">✅ お渡しできるカケラ（複数選択可）</div>
+  <div class="section-title have-title">🎁 お渡しできるカケラ（複数選択可）</div>
   <div class="kakera-grid" id="have-grid"></div>
 </div>
 
 <div class="section">
-  <div class="section-title want-title">❌ 欲しいカケラ（複数選択可）</div>
+  <div class="section-title want-title">🙏 欲しいカケラ（複数選択可）</div>
   <div class="kakera-grid" id="want-grid"></div>
 </div>
 
@@ -100,8 +100,8 @@ function generate() {
   const wantList = KAKERA.filter(k => want.has(k.id)).map(k => k.emoji + k.name).join('　');
 
   let msg = '【カケラトレード募集】\n';
-  if(haveList) msg += `✅ お渡しできるカケラ：${haveList}\n`;
-  if(wantList) msg += `❌ 欲しいカケラ：${wantList}`;
+  if(haveList) msg += `🎁 お渡しできるカケラ：${haveList}\n`;
+  if(wantList) msg += `🙏 欲しいカケラ：${wantList}`;
 
   document.getElementById('result-text').textContent = msg;
   document.getElementById('result').style.display = 'block';
